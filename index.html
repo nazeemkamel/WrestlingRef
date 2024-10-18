@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumo Wrestling Referee</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu" class="menu">
+    <h1>Sumo Wrestling Referee</h1>
+    <h2>Developed by Nazeem Kamel</h2>
+    <button id="startButton" class="start-btn">Start Limb Tracking</button>
+    <button id="quitButton" class="quit-btn">Quit</button>
+  </div>
+
+  <div id="videoContainer" class="video-container" style="display: none;">
+    <div style="position: relative;">
+      <video id="video" style="position: absolute;" autoplay></video>
+      <canvas id="output_canvas" style="position: absolute;"></canvas>
+    </div>
+    <button id="backButton" class="back-btn">Back to Menu</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
