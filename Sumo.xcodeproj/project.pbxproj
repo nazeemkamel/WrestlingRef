@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		11C6F3442D0BE8B700188E2F /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11C6F3432D0BE8B700188E2F /* requirements.txt */; };
+		11C6F3452D0BE8B700188E2F /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 11C6F3422D0BE8B700188E2F /* main.py */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		11C6F31A2D0BCF7200188E2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		11C6F3092D0BCF7000188E2F /* Sumo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sumo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C6F3192D0BCF7200188E2F /* SumoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C6F3232D0BCF7200188E2F /* SumoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C6F3422D0BE8B700188E2F /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		11C6F3432D0BE8B700188E2F /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		11C6F3002D0BCF7000188E2F = {
 			isa = PBXGroup;
 			children = (
+				11C6F3422D0BE8B700188E2F /* main.py */,
+				11C6F3432D0BE8B700188E2F /* requirements.txt */,
 				11C6F30B2D0BCF7000188E2F /* Sumo */,
 				11C6F31C2D0BCF7200188E2F /* SumoTests */,
 				11C6F3262D0BCF7200188E2F /* SumoUITests */,
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C6F3442D0BE8B700188E2F /* requirements.txt in Resources */,
+				11C6F3452D0BE8B700188E2F /* main.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +332,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -378,7 +391,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -398,7 +413,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sumo/Preview Content\"";
 				DEVELOPMENT_TEAM = 5W76FPW588;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to watch the Sumo actions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -427,7 +442,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sumo/Preview Content\"";
 				DEVELOPMENT_TEAM = 5W76FPW588;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to watch the Sumo actions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -11,7 +11,17 @@ import SwiftUI
 struct SumoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            CameraViewControllerWrapper()
         }
     }
 }
+
+struct CameraViewControllerWrapper: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> CameraViewController {
+        return CameraViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: CameraViewController, context: Context) {}
+}
+
